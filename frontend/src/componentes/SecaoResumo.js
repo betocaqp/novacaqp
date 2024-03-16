@@ -27,8 +27,8 @@ const SecaoResumo = ()=>{
                     Até este momento, 27/02/2024, o trabalho contempla aprenas medidores de energia. Mais a frrente vou implementar outros atuadores e sensores.<br/>
                     Uma vez que tenha criado o seu device, poderá enviar as leituras do possível medidor utilizando o Postman, desde que tenhas os códigos necessários<br/>
                     rodando em seu PC. Isso evita que o aluno precise ter em mãos o medidor de energia para as primeiras experiências<br/>
-                    encontrar no seguinte endereço: <b></b><br/>
-                    Existem alguns tutoriais com custo zero o que não significa que o conteúdo seja superficial. Experimente um deles e comprove.<be/>
+                    encontrar no seguinte endereço: <b><font color='yellow'>localhost:3000/api/devices/"id do device cadastrado".</font></b><br/>
+                    Existem alguns tutoriais com custo zero o que não significa que o conteúdo seja superficial. Experimente um deles e comprove.<br/>
                     O trabalho está em constante evolução e atualizações para os treinamentos são constantes assim como a inclusão de novos treinamentos.<br/>
                     Espero que o conteúdo seja útil e possa contribuir com a evolução de todos aqueles que desejam se aventurar por estas florestas.<br/>
                     <br/>
