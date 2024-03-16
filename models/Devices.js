@@ -3,6 +3,7 @@ const slug = require('slug')
 const { Schema } = mongoose
 
 const devicesSchema = new Schema({
+    tipo: {type: Number, required: true},
     nome: { type: String, required: true, unique: true},
     descricao: {type: String, required: true},
     email: {type: String, required: true},

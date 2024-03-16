@@ -26,9 +26,9 @@ export const editRegistro = (id,{nome, descricao, imagem})=>{
         .catch(err => console.log(err))
 }
 
-export const addRegistro = ({nome, email, descricao, imagem})=>{
+export const addRegistro = ({nome, email, descricao, imagem, tipo})=>{
     axios
-        .post(`/api/devices`, {nome, email, descricao, imagem})
+        .post(`/api/devices`, {nome, email, descricao, imagem, tipo})
         .then(res => {
             console.log('Adicionado', res)
             window.location.reload()

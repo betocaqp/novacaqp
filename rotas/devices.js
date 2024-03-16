@@ -75,25 +75,23 @@ router.patch('/:id', async (req,res)=>{
 })
 
 router.post('/send', (req, res)=>{
+    const tipo = req.body.tipo
     const nome = req.body.nome
     const email = req.body.email
     const mensagem = req.body.mensagem
-    require('../nodemail')(nome, email, mensagem)
+    require('../nodemail')(tipo, nome, email, mensagem)
         .then(response => res.json(response))
         .catch(error => res.json(error))
 })
 
 router.post('/', async (req, res)=>{
     const novoDevice = new Device({
+        tipo: req.body.tipo,
         nome: req.body.nome,
         email: req.body.email,
         descricao: req.body.descricao,
         imagem: req.body.imagem
-        //medidas: req.body.medidas
-        // kwh: req.body.kwh,
-        // corrente: req.body.corrente,
-        // voltagem: req.body.voltagem,
-        // fp: req.body.fp
+
     })
     try{
         const saveNovoDevice = await novoDevice.save()
